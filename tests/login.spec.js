@@ -1,14 +1,3 @@
-// import { test, expect } from '@playwright/test';
-
-// test('test', async ({ page }) => {
-//   await page.goto('https://practicesoftwaretesting.com/');
-//   await page.locator('[data-test="nav-sign-in"]').click();
-//   await page.locator('[data-test="email"]').fill('admin@practicesoftwaretesting.com');
-//   await page.locator('[data-test="password"]').fill('welcome01');
-//   await page.locator('[data-test="login-submit"]').click();
-//   await expect(page.locator('[data-test="nav-menu"]')).toContainText('John Doe');
-// });
-
 import { test, expect } from '@playwright/test';
 
 const BASE_URL = 'https://practicesoftwaretesting.com';
@@ -53,10 +42,5 @@ test.describe('Login Functionality Tests', () => {
     await page.getByRole('button', { name: 'Login' }).click();
     await expect(page.locator('//*[@id="email-error"]/div')).toContainText('Email format is invalid');
   });
-
-  // test('Password field hides input (secure)', async ({ page }) => {
-  //   const inputType = await page.getByLabel('Password').getAttribute('type');
-  //   expect(inputType).toBe('password');
-  // });
 
 });
