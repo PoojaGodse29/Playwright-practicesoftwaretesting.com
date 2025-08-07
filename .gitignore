@@ -1,7 +1,18 @@
-
-# Playwright
+# node modules
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+
+# test outputs
+test-results/
+playwright-report/
+*.zip
+*.tmp
+*.log
+
+# VS Code settings
+.vscode/
+
+# environment files
+.env
+
+# Mac system files
+.DS_Store
