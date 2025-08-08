@@ -54,20 +54,20 @@
   },
   "suites": [
     {
-      "title": "home.spec.js",
-      "file": "home.spec.js",
+      "title": "contact.spec.js",
+      "file": "contact.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Home Page Tests",
-          "file": "home.spec.js",
+          "title": "Contact page tests",
+          "file": "contact.spec.js",
           "line": 5,
           "column": 6,
           "specs": [
             {
-              "title": "Page loads successfully and has correct title",
+              "title": "Contact page loads successfully and has correct Contact heading",
               "ok": true,
               "tags": [],
               "tests": [
@@ -79,21 +79,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 55,
+                      "workerIndex": 77,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 754,
+                      "duration": 543,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-08T08:05:37.624Z",
+                      "startTime": "2025-08-08T09:31:59.681Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/home-Home-Page-Tests-Page--740fd-fully-and-has-correct-title-chromium/test-finished-1.png"
+                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/contact-Contact-page-tests-c85cf-has-correct-Contact-heading-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -101,13 +101,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "379953442ddfc3019abd-159d3d1e57b4fb920b33",
-              "file": "home.spec.js",
+              "id": "c166cd7de27ef1fbe0cc-568e4e7036bcd41b5ad2",
+              "file": "contact.spec.js",
               "line": 10,
-              "column": 7
+              "column": 9
             },
             {
-              "title": "Navigation bar and its sub links",
+              "title": "All required form fields should be visible",
               "ok": true,
               "tags": [],
               "tests": [
@@ -119,21 +119,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 55,
+                      "workerIndex": 77,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 620,
+                      "duration": 446,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-08T08:05:38.413Z",
+                      "startTime": "2025-08-08T09:32:00.252Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/home-Home-Page-Tests-Navigation-bar-and-its-sub-links-chromium/test-finished-1.png"
+                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/contact-Contact-page-tests-afcd8-rm-fields-should-be-visible-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -141,13 +141,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "379953442ddfc3019abd-09e6c36487bfba00d813",
-              "file": "home.spec.js",
+              "id": "c166cd7de27ef1fbe0cc-842420e94cb2c7008fe2",
+              "file": "contact.spec.js",
               "line": 15,
-              "column": 7
+              "column": 9
             },
             {
-              "title": "Footer is visible",
+              "title": "Submit without filling any fields shows validation errors",
               "ok": true,
               "tags": [],
               "tests": [
@@ -159,21 +159,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 55,
+                      "workerIndex": 77,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 954,
+                      "duration": 535,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-08T08:05:39.037Z",
+                      "startTime": "2025-08-08T09:32:00.701Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/home-Home-Page-Tests-Footer-is-visible-chromium/test-finished-1.png"
+                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/contact-Contact-page-tests-df1b0-lds-shows-validation-errors-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -181,10 +181,50 @@
                   "status": "expected"
                 }
               ],
-              "id": "379953442ddfc3019abd-7c5a598c8ad06976080e",
-              "file": "home.spec.js",
-              "line": 27,
-              "column": 7
+              "id": "c166cd7de27ef1fbe0cc-706f86948f0ae8f1f560",
+              "file": "contact.spec.js",
+              "line": 24,
+              "column": 9
+            },
+            {
+              "title": "Valid submission succeeds and shows confirmation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 77,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1069,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-08T09:32:01.239Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/contact-Contact-page-tests-f08df-eeds-and-shows-confirmation-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c166cd7de27ef1fbe0cc-724edb07b5f5cdf156cc",
+              "file": "contact.spec.js",
+              "line": 29,
+              "column": 9
             }
           ]
         }
@@ -193,9 +233,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-08T08:05:37.199Z",
-    "duration": 2901.7360000014305,
-    "expected": 3,
+    "startTime": "2025-08-08T09:31:59.253Z",
+    "duration": 3064.2549999952316,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
