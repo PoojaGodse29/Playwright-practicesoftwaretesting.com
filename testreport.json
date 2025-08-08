@@ -54,20 +54,20 @@
   },
   "suites": [
     {
-      "title": "login.spec.js",
-      "file": "login.spec.js",
+      "title": "home.spec.js",
+      "file": "home.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Login Functionality Tests",
-          "file": "login.spec.js",
-          "line": 16,
+          "title": "Home Page Tests",
+          "file": "home.spec.js",
+          "line": 5,
           "column": 6,
           "specs": [
             {
-              "title": "Login with valid credentials",
+              "title": "Page loads successfully and has correct title",
               "ok": true,
               "tags": [],
               "tests": [
@@ -79,21 +79,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 21,
+                      "workerIndex": 55,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2882,
+                      "duration": 754,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T10:14:16.830Z",
+                      "startTime": "2025-08-08T08:05:37.624Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/login-Login-Functionality-Tests-Login-with-valid-credentials-chromium/test-finished-1.png"
+                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/home-Home-Page-Tests-Page--740fd-fully-and-has-correct-title-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -101,13 +101,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "badc1754af1944f68b2b-93d7c393fd10b18bf20c",
-              "file": "login.spec.js",
-              "line": 22,
+              "id": "379953442ddfc3019abd-159d3d1e57b4fb920b33",
+              "file": "home.spec.js",
+              "line": 10,
               "column": 7
             },
             {
-              "title": "Login with invalid credentials",
+              "title": "Navigation bar and its sub links",
               "ok": true,
               "tags": [],
               "tests": [
@@ -119,21 +119,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 21,
+                      "workerIndex": 55,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 609,
+                      "duration": 620,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T10:14:19.747Z",
+                      "startTime": "2025-08-08T08:05:38.413Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/login-Login-Functionality--19901-in-with-invalid-credentials-chromium/test-finished-1.png"
+                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/home-Home-Page-Tests-Navigation-bar-and-its-sub-links-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -141,13 +141,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "badc1754af1944f68b2b-11c77ce99b01ed58b725",
-              "file": "login.spec.js",
-              "line": 29,
+              "id": "379953442ddfc3019abd-09e6c36487bfba00d813",
+              "file": "home.spec.js",
+              "line": 15,
               "column": 7
             },
             {
-              "title": "Login with empty email ",
+              "title": "Footer is visible",
               "ok": true,
               "tags": [],
               "tests": [
@@ -159,21 +159,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 21,
+                      "workerIndex": 55,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 496,
+                      "duration": 954,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T10:14:20.360Z",
+                      "startTime": "2025-08-08T08:05:39.037Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/login-Login-Functionality-Tests-Login-with-empty-email--chromium/test-finished-1.png"
+                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/home-Home-Page-Tests-Footer-is-visible-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -181,89 +181,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "badc1754af1944f68b2b-4b528b569f1aa64929f7",
-              "file": "login.spec.js",
-              "line": 36,
-              "column": 7
-            },
-            {
-              "title": "Login with empty password ",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 21,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 546,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-07T10:14:20.859Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/login-Login-Functionality-Tests-Login-with-empty-password--chromium/test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-c12b2161e696f9921996",
-              "file": "login.spec.js",
-              "line": 43,
-              "column": 9
-            },
-            {
-              "title": "Invalid email format",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 21,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 682,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-07T10:14:21.408Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/login-Login-Functionality-Tests-Invalid-email-format-chromium/test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "badc1754af1944f68b2b-6d43c4cb3616e8c4401c",
-              "file": "login.spec.js",
-              "line": 50,
+              "id": "379953442ddfc3019abd-7c5a598c8ad06976080e",
+              "file": "home.spec.js",
+              "line": 27,
               "column": 7
             }
           ]
@@ -273,9 +193,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-07T10:14:16.409Z",
-    "duration": 5690.920999999857,
-    "expected": 5,
+    "startTime": "2025-08-08T08:05:37.199Z",
+    "duration": 2901.7360000014305,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
