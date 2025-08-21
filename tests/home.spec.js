@@ -30,5 +30,18 @@ test.describe('Home Page Tests', () => {
     await expect(footer).toContainText('This is a DEMO application ');
   });
 
+test('Visual test without authorisation', async ({ page }) => {
+  await page.waitForLoadState('networkidle');
+  await expect(page).toHaveScreenshot("homepagenoauth.png", {
+    maxDiffPixelRatio: 0.05
+  });
+});
 
+    test('Visual test with authorisation', async ({ page }) => {
+    await page.goto("https://practicesoftwaretesting.com/auth/login")
+    await page.locator('[data-test="email"]').fill('admin@practicesoftwaretesting.com');
+    await page.locator('[data-test="password"]').fill('welcome01');
+    await page.locator('[data-test="login-submit"]').click();
+    await expect(page).toHaveScreenshot("homepagewithauth.png");
+  });
 });

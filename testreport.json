@@ -4,7 +4,7 @@
     "rootDir": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/tests",
     "forbidOnly": false,
     "fullyParallel": true,
-    "globalSetup": null,
+    "globalSetup": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/global-setup.js",
     "globalTeardown": null,
     "globalTimeout": 0,
     "grep": {},
@@ -43,188 +43,134 @@
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "login-positive",
+        "name": "login-positive",
+        "testDir": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/loginwithvalidcredentials\\.spec\\.js$/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "login-negative",
+        "name": "login-negative",
+        "testDir": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/loginwithinvalidcredentials\\.spec\\.js$/"
+        ],
+        "timeout": 30000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.54.2",
-    "workers": 1,
+    "workers": 5,
     "webServer": null
   },
   "suites": [
     {
-      "title": "contact.spec.js",
-      "file": "contact.spec.js",
+      "title": "loginwithvalidcredentials.spec.js",
+      "file": "loginwithvalidcredentials.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Contact page tests",
-          "file": "contact.spec.js",
-          "line": 5,
+          "title": "Login Functionality Tests",
+          "file": "loginwithvalidcredentials.spec.js",
+          "line": 6,
           "column": 6,
           "specs": [
             {
-              "title": "Contact page loads successfully and has correct Contact heading",
-              "ok": true,
+              "title": "Login with valid credentials",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "login-positive",
+                  "projectName": "login-positive",
                   "results": [
                     {
-                      "workerIndex": 77,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 543,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 15980,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('[data-test=\"nav-menu\"]')\nExpected string: \u001b[32m\"John Doe\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"nav-menu\"]')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('[data-test=\"nav-menu\"]')\nExpected string: \u001b[32m\"John Doe\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"nav-menu\"]')\u001b[22m\n\n    at /Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/tests/loginwithvalidcredentials.spec.js:12:58",
+                        "location": {
+                          "file": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/tests/loginwithvalidcredentials.spec.js",
+                          "column": 58,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m     \u001b[90m// await page.goto('/dashboard');\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ path\u001b[33m:\u001b[39m \u001b[32m'login-page.png'\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"nav-menu\"]'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'John Doe'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[90m//await expect(page.locator('[data-test=\"nav-menu\"]')).toContainText('John Doe');\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[90m//console.log(await page.content());\u001b[39m\n \u001b[90m 15 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/tests/loginwithvalidcredentials.spec.js",
+                            "column": 58,
+                            "line": 12
+                          },
+                          "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('[data-test=\"nav-menu\"]')\nExpected string: \u001b[32m\"John Doe\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"nav-menu\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 10 |\u001b[39m     \u001b[90m// await page.goto('/dashboard');\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ path\u001b[33m:\u001b[39m \u001b[32m'login-page.png'\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"nav-menu\"]'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'John Doe'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[90m//await expect(page.locator('[data-test=\"nav-menu\"]')).toContainText('John Doe');\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[90m//console.log(await page.content());\u001b[39m\n \u001b[90m 15 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/tests/loginwithvalidcredentials.spec.js:12:58\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-08T09:31:59.681Z",
+                      "startTime": "2025-08-21T12:11:25.777Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/contact-Contact-page-tests-c85cf-has-correct-Contact-heading-chromium/test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "c166cd7de27ef1fbe0cc-568e4e7036bcd41b5ad2",
-              "file": "contact.spec.js",
-              "line": 10,
-              "column": 9
-            },
-            {
-              "title": "All required form fields should be visible",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 77,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 446,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-08T09:32:00.252Z",
-                      "annotations": [],
-                      "attachments": [
+                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/loginwithvalidcredentials--40d16-ogin-with-valid-credentials-login-positive/test-failed-1.png"
+                        },
                         {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/contact-Contact-page-tests-afcd8-rm-fields-should-be-visible-chromium/test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "c166cd7de27ef1fbe0cc-842420e94cb2c7008fe2",
-              "file": "contact.spec.js",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "Submit without filling any fields shows validation errors",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 77,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 535,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-08T09:32:00.701Z",
-                      "annotations": [],
-                      "attachments": [
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/loginwithvalidcredentials--40d16-ogin-with-valid-credentials-login-positive/video.webm"
+                        },
                         {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/contact-Contact-page-tests-df1b0-lds-shows-validation-errors-chromium/test-finished-1.png"
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/loginwithvalidcredentials--40d16-ogin-with-valid-credentials-login-positive/trace.zip"
                         }
-                      ]
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/tests/loginwithvalidcredentials.spec.js",
+                        "column": 58,
+                        "line": 12
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "c166cd7de27ef1fbe0cc-706f86948f0ae8f1f560",
-              "file": "contact.spec.js",
-              "line": 24,
-              "column": 9
-            },
-            {
-              "title": "Valid submission succeeds and shows confirmation",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 77,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1069,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-08T09:32:01.239Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/poojagodse/Desktop/PoojaProjects/Playwrightrepo/test-results/contact-Contact-page-tests-f08df-eeds-and-shows-confirmation-chromium/test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "c166cd7de27ef1fbe0cc-724edb07b5f5cdf156cc",
-              "file": "contact.spec.js",
-              "line": 29,
-              "column": 9
+              "id": "e59d095bf59ac2dbc35d-c9aae90732c6be2e0675",
+              "file": "loginwithvalidcredentials.spec.js",
+              "line": 9,
+              "column": 7
             }
           ]
         }
@@ -233,11 +179,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-08T09:31:59.253Z",
-    "duration": 3064.2549999952316,
-    "expected": 4,
+    "startTime": "2025-08-21T12:11:22.409Z",
+    "duration": 19728.674,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
